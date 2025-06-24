@@ -78,7 +78,7 @@ Visit: http://localhost:3000/
 🔍 Enhanced Filtering: Filters for bedrooms, amenities, and more
 
 📸 Screenshots
-<p align="center"> <img src="./assets/images/homepage.jpg" alt="Homepage" width="600"/> </p> <p align="center"> <img src="./assets/images/listing.jpg" alt="Property Listing" width="600"/> </p>
+
 🤝 Contributing
 We welcome contributions!
 
