@@ -1,0 +1,136 @@
+/* reviewcard.css */
+
+/* Main container */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Review Card */
+.review-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 550px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Review Header */
+.review-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+/* Reviewer Image */
+.reviewer-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f97316;
+}
+
+/* Reviewer Info */
+.reviewer-info {
+  flex-grow: 1;
+}
+
+.reviewer-info h3 {
+  font-size: 1.2rem;
+  color: #1f2937;
+  margin-bottom: 5px;
+}
+
+.property-name {
+  font-size: 0.95rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.property-location {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Review Text & Stars */
+.review-body {
+  margin-top: 15px;
+}
+
+.review-body p {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Star Ratings */
+.rating {
+  display: flex;
+  gap: 3px;
+}
+
+.star {
+  font-size: 18px;
+  color: #d1d5db;
+  transition: color 0.3s;
+}
+
+.star.filled {
+  color: #fbbf24;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .review-card {
+    padding: 16px;
+  }
+
+  .reviewer-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .reviewer-info h3 {
+    font-size: 1rem;
+  }
+
+  .property-name,
+  .property-location {
+    font-size: 0.85rem;
+  }
+
+  .review-body p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .reviewer-info {
+    margin-top: 10px;
+  }
+
+  .review-body {
+    text-align: center;
+  }
+
+  .rating {
+    justify-content: center;
+  }
+}

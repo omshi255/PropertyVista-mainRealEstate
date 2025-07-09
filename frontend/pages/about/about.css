@@ -1,0 +1,200 @@
+/* about.css - matches the dark theme variables defined in index.css */
+
+.about-page {
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.hero-section {
+  padding: 60px 20px;
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content .attractive-text {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+
+.hero-content p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+.hero-content span {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.mission-vision {
+  background-color: var(--bg-color);
+  padding: 60px 20px;
+}
+
+.section-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.mission, .vision {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 30px;
+  flex: 1 1 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.mission:hover, .vision:hover {
+  transform: translateY(-5px);
+}
+
+.mission-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.mission h2, .vision h2 {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+.mission p, .vision p {
+  font-size: 1rem;
+  color: #cbd5e1;
+}
+
+.team-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--accent-color);
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-member {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 6px 14px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  color: var(--text-color);
+  margin: 10px 0 5px;
+}
+
+.team-member p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.reviews-section {
+  background-color: var(--bg-color);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.reviews-section h2 {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.review {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+}
+
+.client-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.review p {
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}
+
+.review span {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .section-container,
+  .team-container,
+  .reviews-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission, .vision, .team-member, .review {
+    width: 90%;
+  }
+
+  .hero-content .attractive-text {
+    font-size: 2.2rem;
+  }
+}

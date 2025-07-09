@@ -1,0 +1,175 @@
+/* Propertyservice.css */
+
+.main-cont {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  margin: 40px 20px;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 700px;
+  animation: fadeIn 1.2s ease-in-out forwards;
+  opacity: 0;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: #f97316;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background: #ea580c;
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 0.95rem;
+    padding: 12px 24px;
+  }
+}
+/* Propertyservice.css */
+
+.main-cont {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 320px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  margin: 40px 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Entrance Animation */
+.content {
+  max-width: 700px;
+  animation: fadeIn 1.2s ease-in-out forwards;
+  opacity: 0;
+}
+
+/* Stylish Gradient Heading */
+.title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ffffff, #fcd34d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Subtitle with Subtle Shadow and Font Style */
+.subtitle {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #e0e7ff;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Button */
+.button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: #f97316;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+}
+
+.button:hover {
+  background: #ea580c;
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 0.95rem;
+    padding: 12px 24px;
+  }
+}

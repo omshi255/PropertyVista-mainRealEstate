@@ -1,0 +1,152 @@
+.property-page {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+/* Property Title */
+.property-details h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 6px;
+}
+
+.property-details h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}
+
+/* Price and Size */
+.price {
+  font-size: 1.4rem;
+  color: var(--accent-color);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.property-details p {
+  margin: 6px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Image Gallery */
+.image-gallery {
+  margin: 24px 0;
+}
+
+.property-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.property-image:hover {
+  transform: scale(1.01);
+}
+
+/* Features Table */
+.features {
+  margin-top: 30px;
+}
+
+.features h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.features-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.features-table td {
+  padding: 10px 0;
+  vertical-align: top;
+  font-size: 1rem;
+}
+
+.feature-title::before {
+  content: "✔️";
+  margin-right: 10px;
+  color: var(--accent-color);
+}
+
+/* Contact Info */
+.contact-details {
+  margin-top: 40px;
+}
+
+.contact-details h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 14px;
+}
+
+.contact-info {
+  font-size: 1rem;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+}
+
+.contact-item i {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+/* Contact Button */
+.contact-btn {
+  margin-top: 16px;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.contact-btn:hover {
+  background-color: var(--hover-bg);
+}
+
+/* Consultancy Logo */
+.consultancy-img img {
+  margin-top: 20px;
+  width: 130px;
+  border-radius: 12px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .property-details h1 {
+    font-size: 1.6rem;
+  }
+
+  .features-table td,
+  .contact-item {
+    font-size: 0.95rem;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+
+  .consultancy-img img {
+    width: 100px;
+  }
+}

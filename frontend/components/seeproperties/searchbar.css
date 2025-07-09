@@ -1,0 +1,87 @@
+/* Container */
+.searchbar-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e293b; /* Dark blue background */
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+/* Dropdown */
+.searchbar-select {
+  padding: 10px 15px;
+  border: 1px solid #334155;
+  background-color: #0f172a;
+  color: #f8fafc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  min-width: 180px;
+  transition: border-color 0.3s ease;
+}
+
+.searchbar-select:focus {
+  outline: none;
+  border-color: #f97316;
+}
+
+/* Input */
+.searchbar-input {
+  padding: 10px 15px;
+  border: 1px solid #334155;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 250px;
+  transition: border-color 0.3s ease;
+}
+
+.searchbar-input::placeholder {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.searchbar-input:focus {
+  outline: none;
+  border-color: #f97316;
+}
+
+/* Search Button */
+.searchbar-button {
+  padding: 10px 20px;
+  background-color: #f97316;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.searchbar-button:hover {
+  background-color: #ea580c;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .searchbar-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchbar-select,
+  .searchbar-input,
+  .searchbar-button {
+    width: 100%;
+    max-width: 400px;
+  }
+}

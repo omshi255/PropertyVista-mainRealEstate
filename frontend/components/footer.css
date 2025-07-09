@@ -1,0 +1,160 @@
+/* footer.css */
+
+.footer {
+  background-color: #111827;
+  color: #f3f4f6;
+  padding: 60px 30px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Branding */
+.footer-brand {
+  flex: 1 1 250px;
+}
+
+.footer-brand h2 {
+  color: #f97316;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.footer-nav {
+  flex: 1 1 180px;
+}
+
+.footer-nav h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  color: #f97316;
+}
+
+/* Social Section */
+.footer-social {
+  flex: 1 1 180px;
+}
+
+.footer-social h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  font-size: 1.1rem;
+  margin-right: 15px;
+  color: #d1d5db;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f97316;
+}
+
+/* Contact Section */
+.footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-contact h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #d1d5db;
+  font-size: 0.95rem;
+}
+
+.footer-contact ul li svg {
+  margin-right: 10px;
+  color: #f97316;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #374151;
+  padding-top: 20px;
+  margin-top: 30px;
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer-content {
+    gap: 30px;
+  }
+
+  .footer-nav,
+  .footer-social,
+  .footer-contact {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 15px;
+  }
+
+  .footer-brand,
+  .footer-nav,
+  .footer-social,
+  .footer-contact {
+    width: 100%;
+  }
+
+  .footer-nav ul,
+  .footer-contact ul {
+    padding-left: 0;
+  }
+
+  .footer-bottom {
+    padding-top: 25px;
+  }
+}

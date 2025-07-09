@@ -1,0 +1,167 @@
+/* Container for Entire Page */
+body {
+  background-color: #0f172a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f1f5f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading Section */
+.property-list-heading {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+.property-list-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 10px;
+}
+
+.property-list-underline {
+  width: 80px;
+  height: 4px;
+  background-color: #f97316;
+  margin: 0 auto;
+  border-radius: 4px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+/* Search Bar */
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-bar {
+  padding: 12px 20px;
+  width: 60%;
+  max-width: 500px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e293b;
+  color: #f8fafc;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+  box-shadow: 0 0 0 3px #f97316aa;
+}
+
+/* Property Cards Grid */
+.property-cards-container-whole {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Individual Card */
+.property-card-whole {
+  display: flex;
+  gap: 20px;
+  background-color: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.property-card-whole:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Image */
+.property-card-img-whole {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card Details */
+.property-card-details-whole {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.property-card-title-whole {
+  font-size: 1.4rem;
+  color: #f8fafc;
+  margin-bottom: 8px;
+}
+
+.property-card-description-whole,
+.property-card-location-whole,
+.property-card-price-whole,
+.property-card-owner-whole {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin: 5px 0;
+}
+
+.property-card-btn-whole {
+  padding: 10px 16px;
+  background-color: #f97316;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  width: fit-content;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.property-card-btn-whole:hover {
+  background-color: #ea580c;
+}
+
+/* No Results Message */
+.no-results {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #94a3b8;
+  margin-top: 30px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .property-card-whole {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .property-card-img-whole {
+    width: 100%;
+    height: 220px;
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+
+  .property-card-details-whole {
+    padding: 20px;
+    align-items: flex-start;
+  }
+}
