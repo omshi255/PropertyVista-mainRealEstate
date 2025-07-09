@@ -1,177 +1,135 @@
 # PropertyVista – Full Stack Real Estate Platform
 
-**PropertyVista** is a modern and scalable real estate web application designed for browsing, listing, and managing properties. It features a fully responsive user interface, robust backend APIs, and secure user management.
+PropertyVista is a full-featured real estate web application built using Django for the backend and React.js for the frontend. It allows users to browse, list, and manage properties with a responsive and interactive UI.
 
 ---
 
-## 🔹 Key Features
+## Key Features
 
-### Property Listings  
-View detailed property information including images, pricing, location, property type, and descriptions.
-
-### Advanced Search Filters  
-Easily filter properties by location, price range, number of bedrooms, and custom criteria.
-
-### Google Maps Integration  
-Visualize exact property locations through dynamic map embedding using the Google Maps API.
-
-### User Reviews & Ratings  
-Users can submit property reviews and ratings to provide insight for other users.
-
-### Authentication System  
-Secure user login and registration using JWT authentication for both property seekers and owners.
-
-### Responsive Design  
-Optimized for seamless user experiences across desktops, tablets, and mobile devices.
+- **Property Listings**: Display detailed property data including images, pricing, and descriptions.
+- **Advanced Filters**: Search by location, price, number of bedrooms, and more.
+- **Google Maps Integration**: Visualize property locations via Google Maps API.
+- **User Authentication**: JWT-based secure login and registration.
+- **User Ratings & Reviews**: Users can rate and review properties.
+- **Responsive Design**: Optimized for desktops, tablets, and mobile devices.
 
 ---
 
-## 🔹 Tech Stack
+## Tech Stack
 
-### Backend  
-- Django (Python)  
-- Django REST Framework  
-- SQLite3 (configurable to PostgreSQL)
+### Backend
+- Django (Python)
+- Django REST Framework
+- SQLite3 (or PostgreSQL)
 
-### Frontend  
-- React.js  
+### Frontend
+- React.js
 - CSS Modules / Styled Components
 
-### Utilities & Integrations  
-- JWT for user authentication  
-- Google Maps API  
-- Git for version control  
-- Docker (Optional, for containerization and deployment)
+### Tools & Services
+- JWT Authentication
+- Google Maps API
+- Docker (Optional)
+- Git (Version Control)
 
 ---
 
-## 🔹 Local Setup Instructions
+## Getting Started Locally
 
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/YourUsername/PropertyVista.git
 
-2. Backend Setup (Django)
-bash
-Copy
-Edit
+
+
+
 cd PropertyVista/backend
-python -m venv venv                 # Create virtual environment
+python -m venv venv
 
 # Activate virtual environment
-# On Windows:
+# Windows
 venv\Scripts\activate
-# On Mac/Linux:
+# Mac/Linux
 source venv/bin/activate
 
 pip install -r requirements.txt
 python manage.py migrate
-python manage.py createsuperuser   # Create admin user
+python manage.py createsuperuser
 python manage.py runserver
-Visit: http://127.0.0.1:8000/
 
-3. Frontend Setup (React)
-bash
-Copy
-Edit
-cd PropertyVista/frontend
-npm install
-npm start
-Visit: http://localhost:3000/
 
-🔹 Environment Variables
-Backend (.env or environment setup):
 
+Environment Variables
+Backend (.env)
 SECRET_KEY: Your Django secret key
 
-DEBUG: False (for production)
+DEBUG: False
 
-ALLOWED_HOSTS: Render domain or * for local development
+ALLOWED_HOSTS: Your Render domain or *
 
-DATABASE_URL: (If using PostgreSQL on Render)
+DATABASE_URL: PostgreSQL URL (if using PostgreSQL)
 
-CORS_ALLOWED_ORIGINS: Frontend domain (e.g., https://propertyvista.onrender.com)
+CORS_ALLOWED_ORIGINS: e.g., https://propertyvista.onrender.com
 
-Frontend (.env):
+Frontend (.env)
+REACT_APP_API_URL: e.g., https://propertyvista-api.onrender.com
 
-REACT_APP_API_URL: Backend API URL (e.g., https://propertyvista-api.onrender.com)
+Deployment on Render
+Django Backend
+Go to https://render.com
 
-🔹 Render Deployment Guide
-Backend Deployment (Django on Render)
-Go to https://render.com and create an account.
+Create a new Web Service
 
-Create a new Web Service.
+Connect your GitHub and select the backend folder
 
-Connect your GitHub and select the backend directory.
-
-Add the following build and start commands:
+Set the following:
 
 Build Command:
 
-bash
-Copy
-Edit
+
 pip install -r requirements.txt && python manage.py migrate
 Start Command:
 
-bash
-Copy
-Edit
+
 gunicorn your_project_name.wsgi
-(Replace your_project_name with your Django project folder name)
+Replace your_project_name with your Django project name
 
-Add environment variables (SECRET_KEY, DATABASE_URL, etc.)
+Add environment variables
 
-Select region and deploy.
+Click Deploy
 
-Frontend Deployment (React on Render)
-Create a new Static Site.
+React Frontend
+Create a new Static Site
 
-Connect your frontend directory (typically /frontend).
+Connect your GitHub frontend folder (typically /frontend)
 
-Build command:
+Set:
 
-bash
-Copy
-Edit
+Build Command:
+
+
 npm install && npm run build
-Publish directory:
+Publish Directory:
 
-bash
-Copy
-Edit
+
 build
 Add environment variable:
 
 REACT_APP_API_URL = https://<your-django-api>.onrender.com
 
-🔹 In Progress Features
-Admin Dashboard for superusers to manage listings and users.
+In Progress
+Admin Dashboard for managing users and listings
 
-Property Owner Dashboard with analytics and management tools.
+Owner Dashboard with analytics
 
-Extended filters for advanced user searches.
+Advanced filtering with additional criteria
 
-🔹 Contributing
-We welcome open-source contributions!
+Contributing
+We welcome contributions:
 
-Fork the repository.
 
-Create a new branch:
-
-bash
-Copy
-Edit
+# Fork the repository
 git checkout -b feature/YourFeature
-Commit your changes:
-
-bash
-Copy
-Edit
 git commit -m "Added YourFeature"
-Push to your branch:
-
-bash
-Copy
-Edit
 git push origin feature/YourFeature
+# Open a Pull Request
