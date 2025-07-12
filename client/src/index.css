@@ -1,0 +1,128 @@
+/* Root: Dark Theme (default) */
+:root {
+  --primary-color: #81c784;
+  --secondary-color: #121212;
+  --font-color: #ffffff;
+  --bg-color: #1e1e1e;
+  --input-bg: #2c2c2c;
+  --border-radius: 10px;
+  --transition: all 0.3s ease;
+  --btn-hover: #66bb6a;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Light Theme (optional toggle) */
+body.light {
+  --primary-color: #4caf50;
+  --secondary-color: #f5f5f5;
+  --font-color: #333;
+  --bg-color: #ffffff;
+  --input-bg: #ffffff;
+  --btn-hover: #43a047;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  min-height: 100vh;
+  transition: var(--transition);
+}
+
+/* Generic Container */
+.container {
+  max-width: 420px;
+  background-color: var(--input-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Header / Title */
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* Label for input fields */
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--font-color);
+}
+
+/* Input styling */
+.input {
+  padding: 0.7rem 1rem;
+  background-color: var(--input-bg);
+  border: 1px solid #444;
+  border-radius: var(--border-radius);
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  color: var(--font-color);
+  transition: var(--transition);
+}
+
+.input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(129, 199, 132, 0.2);
+}
+
+/* Button */
+.btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Centered logout message */
+.success-msg {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    padding: 1.2rem;
+  }
+}
