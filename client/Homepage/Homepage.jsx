@@ -36,9 +36,15 @@ function Home() {
         </div>
       </div>
     </div>
+  
+       <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+          <Link to="/add-property" className="btn">+ Add Property</Link>
+        </div>
+    
 
     <br /><br /><br />
     <h2>Some PropertyListings By Owner !</h2>
+   
   <Editanddelete />
 
 </>
